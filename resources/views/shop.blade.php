@@ -144,11 +144,8 @@
                             </svg>
                         </button>
 
-                        <!-- Quick View Overlay -->
+                            <!-- Quick View Overlay -->
                         <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                            <button class="bg-white text-gray-800 px-6 py-2 rounded-full font-semibold hover:bg-gray-100 transition-all duration-300 transform scale-95 group-hover:scale-100">
-                                Quick View
-                            </button>
                         </div>
                     </div>
 
