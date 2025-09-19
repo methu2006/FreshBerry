@@ -8,7 +8,7 @@
     <div class="bg-white rounded-xl shadow-lg p-10 w-full max-w-md">
         <h2 class="text-3xl font-bold text-center text-red-500 mb-6">Welcome Back 🍓</h2>
 
-        <form action="#" method="POST" class="space-y-5">
+        <form action="{{ route('login.post') }}" method="POST" class="space-y-5">
             @csrf
             <div>
                 <label class="block mb-1 font-medium text-gray-700">Email</label>
@@ -38,7 +38,7 @@
 
         <p class="mt-6 text-center text-sm text-gray-600">
             Don’t have an account?
-            <a href="#" class="text-red-500 hover:underline">Sign up here</a>
+            <a href="{{ url('/register') }}" class="text-red-500 hover:underline">Sign up here</a>
         </p>
     </div>
 </section>

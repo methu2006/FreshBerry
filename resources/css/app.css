@@ -1,4 +1,30 @@
 @import 'tailwindcss';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* FreshBerry component shortcuts */
+@layer components {
+  .nav-link {
+    @apply text-gray-600 hover:text-red-500 font-medium transition-all duration-300 relative;
+  }
+  .nav-link.active {
+    @apply text-red-500;
+  }
+  .nav-link.active::after {
+    content: '';
+    @apply absolute -bottom-1 left-0 w-full h-0.5 bg-red-500 rounded-full;
+  }
+
+  .mobile-nav-link {
+    @apply block py-3 px-4 text-gray-600 hover:text-red-500 hover:bg-red-50 rounded-lg transition-all duration-300;
+  }
+  .mobile-nav-link.active {
+    @apply text-red-500 bg-red-50;
+  }
+}
+
+
 
 @source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
 @source '../../storage/framework/views/*.php';
